@@ -6,7 +6,12 @@ if (PHP_SAPI !== 'cli') {
 
 function countdown($seconds)
 {
-    // ...
+    while($seconds > 0)
+    {
+        echo "$seconds".PHP_EOL;
+        $seconds--;
+        sleep(1);
+    }
 }
 
 countdown(5);
